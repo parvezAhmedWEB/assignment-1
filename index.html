@@ -8,7 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- stylesheet -->
     <link rel="stylesheet" href="src/css/style.css" />
     <!-- Bootstrap CSS v5.2.1 -->
@@ -21,7 +25,67 @@
   </head>
 
   <body>
-    <h1>Startup Project...</h1>
+    <!--==================== HEADER SECTION START ====================-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              class="header-logo"
+              src="src/assets/logo.svg"
+              alt="Logo Images"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center p-md-3 p-lg-0"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-3"></ul>
+            <div class="navber-right">
+              <div class="dropdown d-inline-block d-md-none">
+                <img
+                  class="profile-img dropdown-toggle"
+                  src="src/assets/01.jpg"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  alt="Profile Images"
+                />
+                <div class="dropdown-menu p-3">
+                  <div class="profile-menu">
+                    <div class="profile-user d-flex align-content-center gap-3">
+                      <img class="user-img" src="src/assets/01.jpg" alt="" />
+                      <div>
+                        <h6 class="mb-0 mt-1">Lori Ferguson</h6>
+                        <small class="">example@gmail.com</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="settings mt-2">
+                    <p><i class="ri-shield-check-line"></i> My Bookings</p>
+                    <p><i class="ri-heart-3-line"></i> My Wishlist</p>
+                    <p><i class="ri-settings-5-line"></i> Settings</p>
+                    <p><i class="ri-information-2-line"></i> Help Center</p>
+                    <p><i class="ri-shut-down-line"></i> Sign Out</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--==================== HEADER SECTION END ====================-->
     <!-- JS -->
     <script src="src/js/main.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
