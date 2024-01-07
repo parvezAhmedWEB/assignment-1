@@ -197,6 +197,74 @@ input {
 }
 
 /* ====================== End of BANNER SECTION ====================== */
+/* ====================== FEATURE SECTION ====================== */
+.card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.card-img {
+  overflow: hidden;
+  position: relative;
+}
+.card-img span {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: #fff;
+  background-color: var(--cls-header);
+  padding: 2px 8px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.card-img img {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(80%);
+  -webkit-transition: transform 2s, filter 1.5s ease-in-out;
+  -moz-transition: transform 2s, filter 1.5s ease-in-out;
+  -ms-transition: transform 2s, filter 1.5s ease-in-out;
+  -o-transition: transform 2s, filter 1.5s ease-in-out;
+  -webkit-filter: brightness(80%);
+}
+.card-img img:hover {
+  filter: brightness(100%);
+  transform: scale(1.3);
+  -webkit-filter: brightness(100%);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.card-title {
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.card:hover .card-title {
+  transition: 0.3s;
+  color: var(--cls-active) !important;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.card-body {
+  padding-left: 0 !important;
+}
+.card-price {
+  color: rgb(12, 188, 135) !important;
+}
+/* ====================== End of FEATURE SECTION ====================== */
+
 /* ====================== RESPONSIVE ====================== */
 @media screen and (max-width: 992px) {
   .banner-content {
