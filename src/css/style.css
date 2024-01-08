@@ -13,6 +13,7 @@ font-family: '
   --cls-header: #0b0a12;
   --cls-text: #747579;
   --bg-1: #edecfb;
+  --bg-2: #fbe196;
   /* font size */
   /* Font family */
   --f-heading: Poppins, sans-serif;
@@ -264,6 +265,48 @@ input {
   color: rgb(12, 188, 135) !important;
 }
 /* ====================== End of FEATURE SECTION ====================== */
+/* ====================== BOOKING SECTION ====================== */
+.booking__content {
+  background-color: var(--bg-2);
+}
+
+/* ====================== End of BOOKING SECTION ====================== */
+/* ====================== FOOTER SECTION ====================== */
+.footer {
+  background-color: var(--cls-header);
+}
+.footer__menu ul li a,
+.copyright-menu li a {
+  color: var(--cls-text);
+  text-decoration: none;
+  font-weight: var(--fw-500) !important;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.footer__menu ul li a:hover,
+.copyright-menu li a:hover {
+  color: var(--cls-active);
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+.payment-img img {
+  height: 35px;
+  object-fit: cover;
+}
+.follow-icon i {
+  font-size: 30px;
+  color: #fff;
+}
+.copyright-menu li {
+  list-style-type: none;
+}
+/* ====================== End of FOOTER SECTION ====================== */
 
 /* ====================== RESPONSIVE ====================== */
 @media screen and (max-width: 992px) {

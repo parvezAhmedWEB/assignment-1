@@ -1,3 +1,27 @@
+/* ===================== ADD NEW BOOKING CARD START ===================== */
+/* function addBookingCard() {
+  let inputFiled = document.querySelector(".input-filed");
+  const inputValue = inputFiled.value;
+  const addContent = document.querySelector(".add__content");
+  addContent.className =
+    "text-center mt-5 shadow-sm p-4 rounded-3 w-50 mx-auto";
+  if (isNaN(inputValue)) {
+    addContent.innerHTML = `
+    <h2 class="fw-bold">🎊 OPS! </h2>
+              <p>You are an Adult</p>
+              <p>Your trip has been booked</p>
+    `;
+    inputFiled = "";
+  } else {
+    addContent.innerHTML = `
+    <h2 class="fw-bold">🎊 Congratulations! 🎊</h2>
+              <p>You are an Adult</p>
+              <p>Your trip has been booked</p>
+    `;
+    inputFiled = "";
+  }
+} */
+/* ===================== ADD NEW BOOKING CARD END ===================== */
 /* ===================== CREATE NAV ITEM START ===================== */
 const navContainer = document.querySelector(".navbar-nav");
 const navItems = [
