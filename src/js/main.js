@@ -1,26 +1,31 @@
 /* ===================== ADD NEW BOOKING CARD START ===================== */
-/* function addBookingCard() {
+const addContent = document.querySelector(".add__content");
+function addBookingCard() {
   let inputFiled = document.querySelector(".input-filed");
-  const inputValue = inputFiled.value;
-  const addContent = document.querySelector(".add__content");
   addContent.className =
-    "text-center mt-5 shadow-sm p-4 rounded-3 w-50 mx-auto";
+    "text-center mt-5 shadow-sm p-4 rounded-3 w-75 mx-auto ";
+  const inputValue = inputFiled.value;
   if (isNaN(inputValue)) {
     addContent.innerHTML = `
-    <h2 class="fw-bold">🎊 OPS! </h2>
-              <p>You are an Adult</p>
-              <p>Your trip has been booked</p>
+    <h2 class="fw-bold text-danger"><i class="ri-error-warning-line"></i> Input is not valid! <i    class="ri-error-warning-line"></i></h2>
+    <p>Please enter a valid Number...</p> 
     `;
-    inputFiled = "";
   } else {
-    addContent.innerHTML = `
-    <h2 class="fw-bold">🎊 Congratulations! 🎊</h2>
-              <p>You are an Adult</p>
-              <p>Your trip has been booked</p>
+    if (inputValue >= 18) {
+      addContent.innerHTML = `
+    <h2 class="fw-bold text-success">🎊 Congratulations! 🎊</h2>
+    <p>You are an Adult</p>
+    <p>Your trip has been booked</p>
     `;
-    inputFiled = "";
+    } else {
+      addContent.innerHTML = `
+      <h2 class="fw-bold text-danger"><i class="ri-error-warning-line"></i> OPS! <i class="ri-error-warning-line"></i></h2>
+      <p>You are a Child.</p>
+      <p>Your trip has not been booked</p>
+      `;
+    }
   }
-} */
+}
 /* ===================== ADD NEW BOOKING CARD END ===================== */
 /* ===================== CREATE NAV ITEM START ===================== */
 const navContainer = document.querySelector(".navbar-nav");
